@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Maison Aube | Vestir los días con calma</title>
+    <meta name="description" content="Prendas esenciales de inspiración francesa, creadas para acompañar tus días con sencillez y cuidado.">
+    <meta name="theme-color" content="#f6f4ef">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Maison Aube | Vestir los días con calma">
+    <meta property="og:description" content="Descubre una forma más serena de vestir.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1600&q=85">
+    <meta property="og:locale" content="es_ES">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-[#f6f4ef] text-[#24241f] antialiased">
+    <div class="bg-[#283b32] px-4 py-2 text-center text-xs tracking-wide text-white">Envío gratuito en pedidos superiores a 120 €</div>
+    <header class="border-b border-[#dedbd3]">
+      <div class="mx-auto grid max-w-7xl grid-cols-[1fr_auto] items-center gap-4 px-5 py-4 sm:grid-cols-[auto_minmax(0,1fr)_auto] lg:px-10">
+        <a href="index.html" class="font-serif text-2xl tracking-wide" aria-label="Maison Aube, inicio">MAISON AUBE</a>
+        <form role="search" action="catalogo.html" method="get" class="order-3 col-span-2 flex min-w-0 border-b border-[#aaa79e] sm:order-none sm:col-span-1 sm:mx-8">
+          <label for="busqueda" class="sr-only">Buscar productos</label>
+          <input id="busqueda" name="q" type="search" placeholder="Buscar prendas" class="min-h-11 min-w-0 flex-1 bg-transparent px-2 text-sm outline-none placeholder:text-[#73766d]">
+          <button type="submit" class="px-3 text-sm hover:underline">Buscar</button>
+        </form>
+        <div class="flex items-center justify-end gap-3 text-sm sm:gap-5">
+          <a href="catalogo.html" class="hidden hover:underline md:inline">Colección</a>
+          <details class="relative">
+            <summary aria-label="Abrir menú de usuario" class="cursor-pointer list-none whitespace-nowrap py-2 hover:underline">Mi cuenta</summary>
+            <nav aria-label="Menú de usuario" class="absolute right-0 top-full z-20 mt-2 w-44 border border-[#dedbd3] bg-[#f6f4ef] p-2 shadow-lg">
+              <a href="checkout.html" class="block px-3 py-2 hover:bg-[#e9e7df]">Mis datos</a>
+              <a href="carrito.html" class="block px-3 py-2 hover:bg-[#e9e7df]">Mis pedidos</a>
+            </nav>
+          </details>
+          <a href="carrito.html" class="whitespace-nowrap hover:underline">Bolsa (1)</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section aria-labelledby="hero-title" class="relative min-h-[620px] overflow-hidden bg-[#646b5b] sm:min-h-[700px]">
+        <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=2200&q=90" alt="Silueta de moda contemporánea bajo la luz de la tarde" class="absolute inset-0 h-full w-full object-cover object-[center_38%]">
+        <div class="absolute inset-0 bg-black/30"></div>
+        <div class="relative mx-auto flex min-h-[620px] max-w-7xl items-end px-6 pb-16 sm:min-h-[700px] sm:px-10 sm:pb-20">
+          <div class="max-w-xl text-white">
+            <p class="mb-4 text-xs uppercase tracking-[0.2em]">Colección primavera · verano</p>
+            <h1 id="hero-title" class="font-serif text-5xl leading-[1.05] sm:text-7xl">Vestir los días con calma.</h1>
+            <p class="mt-5 max-w-md text-base leading-7 text-white/90">Piezas esenciales, tejidos honestos y una elegancia que no necesita levantar la voz.</p>
+            <a href="catalogo.html" class="mt-8 inline-flex min-h-12 items-center bg-[#f6f4ef] px-6 text-sm text-[#24241f] transition hover:bg-white">Descubrir la colección</a>
+          </div>
+        </div>
+      </section>
+      <section aria-labelledby="launches-title" class="mx-auto max-w-7xl px-5 py-14 sm:px-10 sm:py-16">
+        <div class="mb-7 flex items-end justify-between gap-4">
+          <div><p class="text-xs uppercase tracking-[0.18em] text-[#73766d]">Recién llegados</p><h2 id="launches-title" class="mt-2 font-serif text-3xl sm:text-4xl">Nuevos lanzamientos</h2></div>
+          <a href="catalogo.html" class="shrink-0 text-sm underline underline-offset-4">Ver colección</a>
+        </div>
+        <div class="flex snap-x gap-4 overflow-x-auto pb-4 sm:gap-6" aria-label="Nuevos productos">
+          <article itemscope itemtype="https://schema.org/Product" class="w-56 shrink-0 snap-start sm:w-64"><a href="producto.html" class="group block"><img itemprop="image" src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=700&q=85" alt="Chaqueta Solène de lino color arena" class="aspect-[4/5] w-full object-cover transition duration-500 group-hover:opacity-90"><h3 itemprop="name" class="mt-3 text-sm">Chaqueta Solène</h3></a><p class="mt-1 text-sm text-[#73766d]" itemprop="offers" itemscope itemtype="https://schema.org/Offer"><meta itemprop="priceCurrency" content="EUR"><meta itemprop="price" content="165">165 €</p></article>
+          <article itemscope itemtype="https://schema.org/Product" class="w-56 shrink-0 snap-start sm:w-64"><a href="producto.html" class="group block"><img itemprop="image" src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=700&q=85" alt="Pantalón Camille de corte amplio" class="aspect-[4/5] w-full object-cover transition duration-500 group-hover:opacity-90"><h3 itemprop="name" class="mt-3 text-sm">Pantalón Camille</h3></a><p class="mt-1 text-sm text-[#73766d]" itemprop="offers" itemscope itemtype="https://schema.org/Offer"><meta itemprop="priceCurrency" content="EUR"><meta itemprop="price" content="118">118 €</p></article>
+          <article itemscope itemtype="https://schema.org/Product" class="w-56 shrink-0 snap-start sm:w-64"><a href="producto.html" class="group block"><img itemprop="image" src="https://images.unsplash.com/photo-1551232864-3f0890e580d9?auto=format&fit=crop&w=700&q=85" alt="Camisa Anaïs de algodón blanco" class="aspect-[4/5] w-full object-cover transition duration-500 group-hover:opacity-90"><h3 itemprop="name" class="mt-3 text-sm">Camisa Anaïs</h3></a><p class="mt-1 text-sm text-[#73766d]" itemprop="offers" itemscope itemtype="https://schema.org/Offer"><meta itemprop="priceCurrency" content="EUR"><meta itemprop="price" content="95">95 €</p></article>
+          <article itemscope itemtype="https://schema.org/Product" class="w-56 shrink-0 snap-start sm:w-64"><a href="producto.html" class="group block"><img itemprop="image" src="https://images.unsplash.com/photo-1548126032-079a0fb0099d?auto=format&fit=crop&w=700&q=85" alt="Vestido Margot de verano" class="aspect-[4/5] w-full object-cover transition duration-500 group-hover:opacity-90"><h3 itemprop="name" class="mt-3 text-sm">Vestido Margot</h3></a><p class="mt-1 text-sm text-[#73766d]" itemprop="offers" itemscope itemtype="https://schema.org/Offer"><meta itemprop="priceCurrency" content="EUR"><meta itemprop="price" content="189">189 €</p></article>
+        </div>
+      </section>
+      <section aria-labelledby="bestsellers-title" class="border-y border-[#dedbd3] bg-[#e9e7df]">
+        <div class="mx-auto max-w-7xl px-5 py-14 sm:px-10 sm:py-16">
+          <div class="mb-8 flex items-end justify-between gap-4"><div><p class="text-xs uppercase tracking-[0.18em] text-[#73766d]">Los favoritos de la maison</p><h2 id="bestsellers-title" class="mt-2 font-serif text-3xl sm:text-4xl">Más vendidos</h2></div><a href="catalogo.html" class="shrink-0 text-sm underline underline-offset-4">Ver catálogo</a></div>
+          <div class="grid grid-cols-2 gap-x-4 gap-y-8 sm:gap-x-6 lg:grid-cols-4">
+            <article itemscope itemtype="https://schema.org/Product"><a href="producto.html" class="group block"><img itemprop="image" src="https://images.unsplash.com/photo-1548126032-079a0fb0099d?auto=format&fit=crop&w=700&q=85" alt="Vestido Margot largo de verano" class="aspect-[4/5] w-full object-cover transition duration-500 group-hover:opacity-90"><h3 itemprop="name" class="mt-3 text-sm">Vestido Margot</h3></a><p class="mt-1 text-sm text-[#73766d]" itemprop="offers" itemscope itemtype="https://schema.org/Offer"><meta itemprop="priceCurrency" content="EUR"><meta itemprop="price" content="189">189 €</p></article>
+            <article itemscope itemtype="https://schema.org/Product"><a href="producto.html" class="group block"><img itemprop="image" src="https://images.unsplash.com/photo-1598554747436-c9293d6a588f?auto=format&fit=crop&w=700&q=85" alt="Top Léa de punto color crema" class="aspect-[4/5] w-full object-cover transition duration-500 group-hover:opacity-90"><h3 itemprop="name" class="mt-3 text-sm">Top Léa</h3></a><p class="mt-1 text-sm text-[#73766d]" itemprop="offers" itemscope itemtype="https://schema.org/Offer"><meta itemprop="priceCurrency" content="EUR"><meta itemprop="price" content="78">78 €</p></article>
+            <article itemscope itemtype="https://schema.org/Product"><a href="producto.html" class="group block"><img itemprop="image" src="https://images.unsplash.com/photo-1592878904946-b3cd8ae243d0?auto=format&fit=crop&w=700&q=85" alt="Bolso Jeanne de piel marrón" class="aspect-[4/5] w-full object-cover transition duration-500 group-hover:opacity-90"><h3 itemprop="name" class="mt-3 text-sm">Bolso Jeanne</h3></a><p class="mt-1 text-sm text-[#73766d]" itemprop="offers" itemscope itemtype="https://schema.org/Offer"><meta itemprop="priceCurrency" content="EUR"><meta itemprop="price" content="210">210 €</p></article>
+            <article itemscope itemtype="https://schema.org/Product"><a href="producto.html" class="group block"><img itemprop="image" src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=700&q=85" alt="Sobrecamisa Éloïse ligera de entretiempo" class="aspect-[4/5] w-full object-cover transition duration-500 group-hover:opacity-90"><h3 itemprop="name" class="mt-3 text-sm">Sobrecamisa Éloïse</h3></a><p class="mt-1 text-sm text-[#73766d]" itemprop="offers" itemscope itemtype="https://schema.org/Offer"><meta itemprop="priceCurrency" content="EUR"><meta itemprop="price" content="142">142 €</p></article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer itemscope itemtype="https://schema.org/Organization" class="bg-[#283b32] text-white">
+      <div class="mx-auto grid max-w-7xl gap-10 px-5 py-12 sm:grid-cols-2 sm:px-10 lg:grid-cols-4">
+        <div><a href="index.html" itemprop="name" class="font-serif text-xl">MAISON AUBE</a><p class="mt-3 max-w-xs text-sm leading-6 text-white/70">Una maison parisina, una forma de vivir. Prendas esenciales hechas para acompañarte.</p><meta itemprop="addressLocality" content="París"><meta itemprop="addressCountry" content="FR"></div>
+        <nav aria-labelledby="footer-categories" class="text-sm"><h2 id="footer-categories" class="mb-4 text-xs uppercase tracking-[0.16em] text-white/60">Categorías</h2><ul class="space-y-3"><li><a href="catalogo.html" class="hover:underline">Novedades</a></li><li><a href="catalogo.html" class="hover:underline">Ropa</a></li><li><a href="catalogo.html" class="hover:underline">Accesorios</a></li><li><a href="catalogo.html" class="hover:underline">Toda la colección</a></li></ul></nav>
+        <section aria-labelledby="footer-legal" class="text-sm"><h2 id="footer-legal" class="mb-4 text-xs uppercase tracking-[0.16em] text-white/60">Legal</h2><details class="mb-3"><summary class="cursor-pointer hover:underline">Aviso legal y privacidad</summary><p class="mt-2 text-xs leading-5 text-white/70">Tus datos se utilizan únicamente para gestionar tu experiencia de compra. Este sitio es un prototipo sin procesamiento de pedidos.</p></details><details><summary class="cursor-pointer hover:underline">Envíos y devoluciones</summary><p class="mt-2 text-xs leading-5 text-white/70">Envío gratuito desde 120 €. Devoluciones disponibles durante 30 días.</p></details></section>
+        <address class="not-italic text-sm"><h2 class="mb-4 text-xs uppercase tracking-[0.16em] text-white/60">Contacto</h2><p class="text-white/80">¿Te ayudamos a elegir?</p><a href="mailto:bonjour@maisonaube.fr" class="mt-3 inline-block underline underline-offset-4" itemprop="email">bonjour@maisonaube.fr</a><p class="mt-3 text-white/70">París, Francia</p></address>
+      </div>
+      <div class="border-t border-white/15 px-5 py-4 text-center text-xs text-white/60">© 2025 Maison Aube · Todos los derechos reservados</div>
+    </footer>
+  </body>
+</html>
